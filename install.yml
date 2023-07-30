@@ -1,6 +1,6 @@
 ---
 - name: install apache
-  hosts: dev
+  hosts: all
   become: true
   tasks:
    - yum:
