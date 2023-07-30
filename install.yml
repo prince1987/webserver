@@ -1,8 +1,8 @@
 ---
 - name: install apache
-  hosts: all
+  hosts: dev
   become: true
   tasks:
-    yum:
+   - yum:
       name: httpd
       state: present
